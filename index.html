@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Centro de Aprendizagem Ativa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="i/favicon.png" type="image/x-icon" />
+  <!-- AOS 3.0.0-beta.6 plugin CSS (Animations) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&subset=latin&display=swap"
+    rel="stylesheet" />
+  <!-- Startup CSS + Bootstrap CSS (Styles for all blocks) - Remove ".min" if you want to edit a css code -->
+  <link href="css/styles.css" rel="stylesheet" />
+  <!-- jQuery 3.6.0 (uncomment line below if you need jQuery) -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+</head>
+
+<body>
+  <!-- Escolha de usuário -->
+  <div id="box-intro">
+    <header class="py-20 bg-bg-1">
+      <div class="container">
+        <div class="row justify-content-between flex-column-reverse flex-lg-row">
+          <div class="col-lg-6 mt-8 mt-lg-0">
+            <h1 class="display-3 text-light-1" data-aos="fade-down" data-aos-delay="0">
+              Centro de Aprendizagem Ativa
+            </h1>
+            <p class="mb-8 fs-1 mt-4 text-light-2" data-aos="fade-down" data-aos-delay="250">
+              Vamos fortalecer o ecossistema de professores e gestores em metodologias ativas no Brasil?
+            </p>
+            <a href="#" class="btn btn-action-5 me-4" data-aos="fade-down" data-aos-delay="500"
+              onclick="closeBoxIntro()">
+              Sou Camino School
+            </a>
+            <a href="#" class="btn btn-outline-light-2" data-aos="fade-down" data-aos-delay="650">
+              Sou professor/gestor parceiro
+            </a>
+            <p class="fs-5 mt-8 text-light-2" data-aos="fade-down" data-aos-delay="750">
+              Ao clicar, você aceita os termos de uso.
+            </p>
+          </div>
+          <div class="col-lg-6 col-xl-auto">
+            <img src="i/header-6.png" srcset="i/header-6@2x.png 2x" alt="" class="img-fluid" data-aos="fade-down"
+              data-aos-delay="250">
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="sticky-top py-2 bg-bg-1">
+    <div class="d-block d-lg-none">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-3" data-aos="fade-down" data-aos-delay="0">
+            <a href="#" class="btn btn-width-equal-height d-lg-none rounded-circle custom-mobile-nav-btn"
+              data-bs-toggle="offcanvas" data-bs-target="#custom-id-6jsumu9t">
+              <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="fill-light-1">
+                <path
+                  d="M2.00016 5.33333H14.0002C14.177 5.33333 14.3465 5.2631 14.4716 5.13807C14.5966 5.01305 14.6668 4.84348 14.6668 4.66667C14.6668 4.48986 14.5966 4.32029 14.4716 4.19526C14.3465 4.07024 14.177 4 14.0002 4H2.00016C1.82335 4 1.65378 4.07024 1.52876 4.19526C1.40373 4.32029 1.3335 4.48986 1.3335 4.66667C1.3335 4.84348 1.40373 5.01305 1.52876 5.13807C1.65378 5.2631 1.82335 5.33333 2.00016 5.33333ZM14.0002 10.6667H2.00016C1.82335 10.6667 1.65378 10.7369 1.52876 10.8619C1.40373 10.987 1.3335 11.1565 1.3335 11.3333C1.3335 11.5101 1.40373 11.6797 1.52876 11.8047C1.65378 11.9298 1.82335 12 2.00016 12H14.0002C14.177 12 14.3465 11.9298 14.4716 11.8047C14.5966 11.6797 14.6668 11.5101 14.6668 11.3333C14.6668 11.1565 14.5966 10.987 14.4716 10.8619C14.3465 10.7369 14.177 10.6667 14.0002 10.6667ZM14.0002 7.33333H2.00016C1.82335 7.33333 1.65378 7.40357 1.52876 7.5286C1.40373 7.65362 1.3335 7.82319 1.3335 8C1.3335 8.17681 1.40373 8.34638 1.52876 8.4714C1.65378 8.59643 1.82335 8.66667 2.00016 8.66667H14.0002C14.177 8.66667 14.3465 8.59643 14.4716 8.4714C14.5966 8.34638 14.6668 8.17681 14.6668 8C14.6668 7.82319 14.5966 7.65362 14.4716 7.5286C14.3465 7.40357 14.177 7.33333 14.0002 7.33333Z">
+                </path>
+              </svg>
+            </a>
+          </div>
+          <div class="col-6 text-center" data-aos="fade-down" data-aos-delay="250">
+            <a href="https://caminoschool.com.br/#!home">
+              <img src="i/logo-color-gray.png" srcset="i/logo-color-gray.png 2x" alt="" class="img-fluid"
+                data-aos="fade-down" data-aos-delay="0" />
+            </a>
+          </div>
+          <div class="col-3" data-aos="fade-down" data-aos-delay="500"></div>
+        </div>
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-start custom-dark-offcanvas-bg" id="custom-id-6jsumu9t" aria-hidden="true">
+      <div class="offcanvas-header">
+        <a href="https://caminoschool.com.br/#!home">
+          <img src="i/logo-color-gray.png" srcset="i/logo-color-gray.png 2x" alt="" class="img-fluid" />
+        </a>
+        <a href="#" class="btn btn-sm btn-width-equal-height custom-mobile-nav-btn" data-bs-dismiss="offcanvas">
+          <svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="fill-light-1">
+            <path
+              d="M8.9398 8L13.1398 3.80667C13.2653 3.68113 13.3359 3.51087 13.3359 3.33333C13.3359 3.1558 13.2653 2.98554 13.1398 2.86C13.0143 2.73447 12.844 2.66394 12.6665 2.66394C12.4889 2.66394 12.3187 2.73447 12.1931 2.86L7.9998 7.06L3.80646 2.86C3.68093 2.73447 3.51066 2.66394 3.33313 2.66394C3.1556 2.66394 2.98533 2.73447 2.8598 2.86C2.73426 2.98554 2.66374 3.1558 2.66374 3.33333C2.66374 3.51087 2.73426 3.68113 2.8598 3.80667L7.0598 8L2.8598 12.1933C2.79731 12.2553 2.74771 12.329 2.71387 12.4103C2.68002 12.4915 2.6626 12.5787 2.6626 12.6667C2.6626 12.7547 2.68002 12.8418 2.71387 12.9231C2.74771 13.0043 2.79731 13.078 2.8598 13.14C2.92177 13.2025 2.99551 13.2521 3.07675 13.2859C3.15798 13.3198 3.24512 13.3372 3.33313 13.3372C3.42114 13.3372 3.50827 13.3198 3.58951 13.2859C3.67075 13.2521 3.74449 13.2025 3.80646 13.14L7.9998 8.94L12.1931 13.14C12.2551 13.2025 12.3288 13.2521 12.4101 13.2859C12.4913 13.3198 12.5785 13.3372 12.6665 13.3372C12.7545 13.3372 12.8416 13.3198 12.9228 13.2859C13.0041 13.2521 13.0778 13.2025 13.1398 13.14C13.2023 13.078 13.2519 13.0043 13.2857 12.9231C13.3196 12.8418 13.337 12.7547 13.337 12.6667C13.337 12.5787 13.3196 12.4915 13.2857 12.4103C13.2519 12.329 13.2023 12.2553 13.1398 12.1933L8.9398 8Z"
+              fill="#0C111E"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <a href="#" class="fw-bold py-2 d-inline-block text-light-1">
+            Home
+          </a>
+        </div>
+        <div>
+          <a href="#sobre" class="fw-bold py-2 d-inline-block text-light-1">
+            Sobre
+          </a>
+        </div>
+        <div>
+          <a href="#jornadas" class="fw-bold py-2 d-inline-block text-light-1">
+            Jornadas
+          </a>
+        </div>
+        <div>
+          <a href="#equipe" class="fw-bold py-2 d-inline-block text-light-1">
+            Equipe
+          </a>
+        </div>
+        <div>
+          <a href="#" class="mt-15 btn btn-sm rounded-2 border-light-3 fw-bold py-2 d-inline-block text-light-3">
+            Login
+          </a>
+        </div>
+        <a href="#" class="btn btn-sm btn-action-1 rounded-2 mt-4">
+          Sign Up
+        </a>
+      </div>
+    </div>
+    <div class="d-none d-lg-block">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-2">
+            <a href="https://caminoschool.com.br/#!home">
+              <img src="i/logo-color-gray.png" srcset="i/logo-color-gray.png 2x" alt="" class="img-fluid"
+                data-aos="fade-down" data-aos-delay="0" />
+            </a>
+          </div>
+          <div class="text-center d-flex justify-content-center col-6">
+            <a href="#" class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="150">
+              Home
+            </a>
+            <a href="#sobre" class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="250">
+              Sobre
+            </a>
+            <a href="#jornadas" class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="400">
+              Jornadas
+            </a>
+            <a href="#equipe" class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="500">
+              Equipe
+            </a>
+          </div>
+          <div class="d-flex align-items-center justify-content-end col-lg-3">
+            <a href="#" class="fw-bold fs-4 me-8 text-light-1" data-aos="fade-down" data-aos-delay="650">
+              Login
+            </a>
+            <a href="#" class="btn btn-sm rounded-2 btn-action-5" data-aos="fade-down" data-aos-delay="750">
+              Sign Up
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="py-20 bg-bg-3 text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-10">
+          <h1 class="display-3" data-aos="fade-down" data-aos-delay="0">
+            Bem-vindo ao Centro de Aprendizagem Ativa!
+          </h1>
+          <div class="mt-8 mt-lg-12 position-relative" data-aos="fade-down" data-aos-delay="250">
+            <img src="i/header-3.png" srcset="i/header-3@2x.png 2x" alt="" class="img-fluid">
+            <a href="#"
+              class="btn btn-width-equal-height btn-action-1 position-absolute translate-middle top-50 start-50 rounded-circle"
+              data-bs-toggle="modal" data-bs-target="#custom-id-opjm60te">
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-light-1">
+                <path
+                  d="M17.394 13.046L7.8495 18.584C7.0395 19.0535 6 18.485 6 17.5385V6.46252C6 5.51752 7.038 4.94752 7.8495 5.41852L17.394 10.9565C17.5783 11.0617 17.7314 11.2138 17.8379 11.3972C17.9445 11.5807 18.0006 11.7891 18.0006 12.0013C18.0006 12.2134 17.9445 12.4218 17.8379 12.6053C17.7314 12.7888 17.5783 12.9408 17.394 13.046Z">
+                </path>
+              </svg>
+            </a>
+            <div class="modal fade" id="custom-id-opjm60te" tabindex="-1">
+              <a href="#"
+                class="btn btn-sm btn-width-equal-height position-fixed top-0 end-0 zi-5 rounded-circle btn-bg-3 mt-4 me-4"
+                data-bs-dismiss="modal">
+                <svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="fill-dark-2">
+                  <path
+                    d="M8.9398 8L13.1398 3.80667C13.2653 3.68113 13.3359 3.51087 13.3359 3.33333C13.3359 3.1558 13.2653 2.98554 13.1398 2.86C13.0143 2.73447 12.844 2.66394 12.6665 2.66394C12.4889 2.66394 12.3187 2.73447 12.1931 2.86L7.9998 7.06L3.80646 2.86C3.68093 2.73447 3.51066 2.66394 3.33313 2.66394C3.1556 2.66394 2.98533 2.73447 2.8598 2.86C2.73426 2.98554 2.66374 3.1558 2.66374 3.33333C2.66374 3.51087 2.73426 3.68113 2.8598 3.80667L7.0598 8L2.8598 12.1933C2.79731 12.2553 2.74771 12.329 2.71387 12.4103C2.68002 12.4915 2.6626 12.5787 2.6626 12.6667C2.6626 12.7547 2.68002 12.8418 2.71387 12.9231C2.74771 13.0043 2.79731 13.078 2.8598 13.14C2.92177 13.2025 2.99551 13.2521 3.07675 13.2859C3.15798 13.3198 3.24512 13.3372 3.33313 13.3372C3.42114 13.3372 3.50827 13.3198 3.58951 13.2859C3.67075 13.2521 3.74449 13.2025 3.80646 13.14L7.9998 8.94L12.1931 13.14C12.2551 13.2025 12.3288 13.2521 12.4101 13.2859C12.4913 13.3198 12.5785 13.3372 12.6665 13.3372C12.7545 13.3372 12.8416 13.3198 12.9228 13.2859C13.0041 13.2521 13.0778 13.2025 13.1398 13.14C13.2023 13.078 13.2519 13.0043 13.2857 12.9231C13.3196 12.8418 13.337 12.7547 13.337 12.6667C13.337 12.5787 13.3196 12.4915 13.2857 12.4103C13.2519 12.329 13.2023 12.2553 13.1398 12.1933L8.9398 8Z"
+                    fill="#0C111E">
+                  </path>
+                </svg>
+              </a>
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content bg-transparent">
+                  <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="container d-flex justify-content-center align-items-center">
+                      <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen="">
+                        </iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- sobre -->
+  <section id="sobre" class="py-10 py-lg-20 bg-bg-3">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9">
+          <p class="fs-2 text-center mb-0">
+            Este é um espaço de troca, aqui não existem cursos, mas sim <strong class="display-6">jornadas</strong>. Aqui você vai
+            encontrar e compartilhar informações e conhecimentos em metodologias ativas. Inicialmente, <strong class="display-6">o Centro de
+            Aprendizagem Ativa</strong> foi criado para atender as formações internas da Caminho School. Mas também existem
+            jornadas para professores e gestores parceiros que queiram amplicar esse ecossistema.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jornadas -->
+  <section id="jornadas" class="pt-10 pt-lg-20 pb-lg-5 bg-bg-3">
+    <div class="container">
+      <p class="text-center fs-1 text-dark-1 font-heading mb-md-15 mb-6" data-aos="fade-down" data-aos-delay="0">
+        Nossas incríveis jornadas rumo a aprendizagem ativa!
+      </p>
+      <div class="row">
+        <div class="mb-15 text-center col-lg-6" data-aos="fade-down" data-aos-delay="250">
+          <img src="i/header_17_video_poster.jpg" srcset="i/header_17_video_poster.jpg 2x" alt="" class="w-100 mb-4">
+          <p class="mb-2">
+            Formação
+          </p>
+          <h2 class="mb-2">
+            Professor, e se fosse de outro jeito?
+          </h2>
+          <p class="fs-3 mb-10 remove-br">
+            Primeiros passos para entender metodologias ativas e como elas são uma boa opção para a formação
+            do século XXI.
+          </p>
+          <a href="#" class="fw-bold text-action-5">
+            Saiba Mais
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-6 text-center text-sm-start" data-aos="fade-down" data-aos-delay="500">
+          <div>
+            <img src="i/camino-fotosautorizadas2021-42.jpeg" srcset="i/camino-fotosautorizadas2021-42.jpeg 2x" alt="" class="w-100 mb-4">
+            <p class="mb-2">
+              Framework
+            </p>
+            <h5 class="mb-4 mb-sm-10">
+              Criação e Gestão de uma expedição dentro da Camino School
+            </h5>
+            <p class="fs-3 mb-8">
+              Aqui você encontra a explicação de todo o fluxo de trabalho de uma expedição. Indicado para
+              professores, e aberto a qualquer outro caminhante.
+            </p>
+            <a href="#" class="fw-bold text-action-5">
+              Saiba Mais
+            </a>
+            <div class="mt-8 mb-15 border-bottom border-dark-1 opacity-20">
+            </div>
+          </div>
+          <div>
+            <img src="i/camino-fotosautorizadas2021-33.jpeg" srcset="i/camino-fotosautorizadas2021-33.jpeg 2x" alt="" class="w-100 mb-4">
+            <p class="mb-2">
+              Formação
+            </p>
+            <h5 class="mb-4 mb-sm-10">
+              Currículo
+            </h5>
+            <p class="fs-3 mb-8">
+              Um panorama geral de como é construído o currículo na Camino School.
+            </p>
+            <a href="#" class="fw-bold text-action-5">
+              Saiba Mais
+            </a>
+            <div class="mt-8 mb-15 border-bottom border-dark-1 opacity-20">
+            </div>
+          </div>
+          <div>
+            <img src="i/camino-fotosautorizadas2021-48.jpeg" srcset="i/camino-fotosautorizadas2021-48.jpeg 2x" alt="" class="w-100 mb-4">
+            <p class="mb-2">
+              Formação
+            </p>
+            <h5 class="mb-4 mb-sm-10">
+              Avaliação
+            </h5>
+            <p class="fs-3 mb-8">
+              Um panorama geral de como são construídas as rubricas de avaliação na Camino School.
+            </p>
+            <a href="#" class="fw-bold text-action-5">
+              Saiba Mais
+            </a>
+            <div class="mt-8 mb-15 border-bottom border-dark-1 opacity-20">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 text-center text-sm-start" data-aos="fade-down" data-aos-delay="750">
+          <div>
+            <img src="i/camino-fotosautorizadas2021-45.jpeg" srcset="i/camino-fotosautorizadas2021-45.jpeg 2x" alt="" class="w-100 mb-4">
+            <p class="mb-2">
+              Formação
+            </p>
+            <h5 class="mb-4 mb-sm-10">
+              Instrução
+            </h5>
+            <p class="fs-3 mb-8">
+              Um panorama geral de como é construída uma aula na Camino School.
+            </p>
+            <a href="#" class="fw-bold text-action-5">
+              Saiba Mais
+            </a>
+            <div class="mt-8 mb-15 border-bottom border-dark-1 opacity-20">
+            </div>
+          </div>
+          <div>
+            <img src="i/camino-fotosautorizadas2021-24.jpeg" srcset="i/camino-fotosautorizadas2021-24.jpeg 2x" alt="" class="w-100 mb-4">
+            <p class="mb-2">
+              Formação
+            </p>
+            <h5 class="mb-4 mb-sm-10">
+              Arquitetura em uma escola ativa
+            </h5>
+            <p class="fs-3 mb-8">
+              Conheça um pouco do que o espaço e arquitetura desempenham nas metodologias ativas.
+            </p>
+            <a href="#" class="fw-bold text-action-5">
+              Saiba Mais
+            </a>
+            <div class="mt-8 mb-15 border-bottom border-dark-1 opacity-20">
+            </div>
+          </div>
+          <div>
+            <img src="i/camino-fotosautorizadas2021-30.jpeg" srcset="i/camino-fotosautorizadas2021-30.jpeg 2x" alt="" class="w-100 mb-4">
+            <p class="mb-2">
+              Formação
+            </p>
+            <h5 class="mb-4 mb-sm-10">
+              Comunicação em uma escola ativa
+            </h5>
+            <p class="fs-3 mb-8">
+              Apontamentos sobre processos de comunicação com os atores para fora da sala, mas dentro da comunidade Camino School.
+            </p>
+            <a href="#" class="fw-bold text-action-5">
+              Saiba Mais
+            </a>
+            <div class="mt-8 mb-15 border-bottom border-dark-1 opacity-20">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Equipe -->
+  <section id="equipe" class="py-10 py-lg-20 text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-9 col-lg-7 col-xl-6 col-xxl-5">
+          <h2 class="display-5 mb-6" data-aos="fade-down" data-aos-delay="0">
+            Equipe
+          </h2>
+          <p class="mb-15 fs-2" data-aos="fade-down" data-aos-delay="150">
+            As mentes, os braços e as vozes construindo todo esse material ativamente
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-6 col-md-5 col-lg-3 mb-6 mb-lg-0" data-aos="fade-down" data-aos-delay="250">
+          <div class="border rounded-2 border-dark-3 p-6 h-100">
+            <img src="i/leticia1.jpg" srcset="i/leticia1.jpg 2x" alt="" class="img-fluid rounded-circle mb-6" />
+            <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=leticia.lyle@caminoschool.com.br"
+              target="_blank">
+              <h5 class="mb-2">
+                Leticia Lyle
+              </h5>
+            </a>
+            <p class="mb-4">
+              Diretora Camino School
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-5 col-lg-3 mb-6 mb-lg-0" data-aos="fade-down" data-aos-delay="400">
+          <div class="border rounded-2 border-dark-3 p-6 h-100">
+            <img src="i/ju.jpg" srcset="i/ju.jpg 2x" alt="" class="img-fluid rounded-circle mb-6" />
+            <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=juliana.ferrari@caminoschool.com.br"
+              target="_blank">
+              <h5 class="mb-2">
+                Juliana Ferrari
+              </h5>
+            </a>
+            <p class="mb-4">
+              Design Instrucional
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-5 col-lg-3 mb-6 mb-sm-0" data-aos="fade-down" data-aos-delay="500">
+          <div class="border rounded-2 border-dark-3 p-6 h-100">
+            <img src="i/denise.jpg" srcset="i/denise.jpg 2x" alt="" class="img-fluid rounded-circle mb-6" />
+            <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=denise.schnyder@caminoschool.com.br"
+              target="_blank">
+              <h5 class="mb-2">
+                Denise Schnyder
+              </h5>
+            </a>
+            <p class="mb-4">
+              Coordenadora de Avaliação
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-5 col-lg-3" data-aos="fade-down" data-aos-delay="650">
+          <div class="border rounded-2 border-dark-3 p-6 h-100">
+            <img src="i/lina.jpg" srcset="i/lina.jpg 2x" alt="" class="img-fluid rounded-circle mb-6" />
+            <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=lina.lopes@caminoschool.com.br"
+              target="_blank">
+              <h5 class="mb-2">
+                Lina Lopes
+              </h5>
+            </a>
+            <p class="mb-4">
+              Creative Technologist
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="pt-md-10 py-8 text-center text-lg-start bg-bg-1">
+    <div class="container">
+      <div class="row flex-column flex-lg-row align-items-center justify-content-center">
+        <div class="mb-4 mb-lg-0 col-lg-5 order-1 order-lg-0" data-aos="fade-down" data-aos-delay="0">
+          <a href="#" class="font-heading me-4 text-light-1">
+            Home
+          </a>
+          <a href="#" class="font-heading mx-4 text-light-1">
+            Sobre
+          </a>
+          <a href="#" class="font-heading mx-4 text-light-1">
+            Jornadas
+          </a>
+          <a href="#" class="font-heading ms-4 text-light-1">
+            Equipe
+          </a>
+        </div>
+        <div class="mb-4 mb-lg-0 col-lg-2 text-center order-0 order-lg-1" data-aos="fade-down" data-aos-delay="150">
+          <a href="https://caminoschool.com.br/">
+            <img src="i/logo-color-gray.png" srcset="i/logo-color-gray.png 2x" alt="" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-lg-5 text-lg-end order-2" data-aos="fade-down" data-aos-delay="250">
+          <a href="#" class="btn btn-action-1 border-light-3">
+            Sign up
+          </a>
+        </div>
+      </div>
+      <div class="mt-10 mb-8 border-bottom border-light-3" data-aos="fade-down" data-aos-delay="400">
+      </div>
+      <p class="text-center fs-5 mb-0 text-light-2" data-aos="fade-down" data-aos-delay="500">
+        Copyright © 2021 designmodo.com
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS 3.0.0-beta.6 plugin JS (Animations) -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <!-- Startup JS (Custom js for all blocks) - Remove ".min" if you want to edit a JS code -->
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
