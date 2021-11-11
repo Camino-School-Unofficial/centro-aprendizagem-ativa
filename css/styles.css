@@ -20235,3 +20235,31 @@ a:not([data-aos]):not(.btn):hover {
   z-index: 10; /* keep on top of other elements on the page */
   box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);
 }
+
+.stWhite{
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 8;
+  stroke-miterlimit: 10;
+}
+
+.st0{
+  fill: none;
+  stroke: #851f82;
+  stroke-width: 4;
+  stroke-miterlimit: 10;
+}
+
+.st1 {
+  fill: #ec6f05;
+  stroke: none;
+  stroke-width: 1;
+  stroke-miterlimit: 10;
+}
+
+.st2 {
+  fill: #851F82;
+  stroke: none;
+  stroke-width: 1;
+  stroke-miterlimit: 10;
+}

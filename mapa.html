@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Testes SVG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="i/favicon.png" type="image/x-icon" />
+    <!-- AOS 3.0.0-beta.6 plugin CSS (Animations) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&subset=latin&display=swap"
+        rel="stylesheet" />
+    <!-- Startup CSS + Bootstrap CSS (Styles for all blocks) -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- jQuery 3.6.0 (uncomment line below if you need jQuery) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 1920 1080">
+            <image width="1920" height="1080" xlink:href="i/mapa.svg">
+            </image>
+            <text x="920" y="230" text-anchor="middle" class="st2 h2">Ampliando</text>
+            <text x="920" y="270" text-anchor="middle" class="st2 h2">horizontes</text>
+            <text x="1460" y="290" text-anchor="middle" class="st2 h2">Construindo</text>
+            <text x="1460" y="330" text-anchor="middle" class="st2 h2">ferramentas</text>
+            <a xlink:href="#" data-toggle="popover" data-bs-html="true" title="Você está aqui"
+                data-bs-content="Aqui você conhece um pouco dos objetivos da jornada." data-bs-placement="top">
+                <text x="220" y="590" text-anchor="middle" class="st2 h4">Apresentação</text>
+                <text x="220" y="620" text-anchor="middle" class="st2 h4">da Jornada</text>
+            </a>
+            <a xlink:href="#" data-toggle="popover" data-bs-html="true"
+            data-bs-content="Aqui você descobre como manejar a interface e os combinados visuais." data-bs-placement="bottom">
+                <text x="440" y="590" text-anchor="middle" class="st2 h4">Tutorial de</text>
+                <text x="440" y="620" text-anchor="middle" class="st2 h4">navegação</text>
+            </a>
+            <a xlink:href="#" data-toggle="popover" data-bs-html="true"
+            data-bs-content="Aqui falamos um pouco do perfil da escola no séc XXI." data-bs-placement="top">
+                <text x="655" y="590" text-anchor="middle" class="st2 h4">Aprendizagem</text>
+                <text x="655" y="620" text-anchor="middle" class="st2 h4">Ativa</text>
+            </a>
+            <a xlink:href="#" data-toggle="popover" data-bs-html="true"
+            data-bs-content="Aqui você entende como o cérebro aprende." data-bs-placement="bottom">
+                <text x="870" y="590" text-anchor="middle" class="st2 h4">Ciência da</text>
+                <text x="870" y="620" text-anchor="middle" class="st2 h4">Aprendizagem</text>
+            </a>
+            <a xlink:href="#" data-toggle="popover" data-bs-html="true"
+            data-bs-content="Aqui você percebe a importância das competências socioemocionais na aprendizagem e na vida." data-bs-placement="top">
+                <text x="1085" y="590" text-anchor="middle" class="st2 h4">Socio</text>
+                <text x="1085" y="620" text-anchor="middle" class="st2 h4">emocionais</text>
+            </a>
+            <a xlink:href="#" data-toggle="popover" data-bs-html="true"
+            data-bs-content="Aqui você acessa e compartilha estratégias para ser usada em sala de aula." data-bs-placement="bottom">
+                <text x="1300" y="600" text-anchor="middle" class="st1 h4">Estratégias</text>
+            </a>
+            <a xlink:href="#" data-toggle="popover" data-bs-html="true"
+            data-bs-content="Aqui você faz o planejamento de uma aula completa usando de metodologia ativa." data-bs-placement="top">
+                <text x="1520" y="590" text-anchor="middle" class="st2 h4">Planejamento</text>
+                <text x="1520" y="620" text-anchor="middle" class="st2 h4">Reverso</text>
+            </a>
+            <a xlink:href="#" data-toggle="popover" data-bs-html="true"
+            data-bs-content="Aqui você acessa anexos." data-bs-placement="bottom">
+                <text x="1735" y="590" text-anchor="middle" class="st2 h4">Fim</text>
+                <text x="1735" y="620" text-anchor="middle" class="st2 h4">do trilho</text>
+            </a>
+        </svg>
+    </div>
+</body>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    $(document).ready(function () {
+        $('[data-toggle="popover"]').popover();
+    });
+</script>
+
+</html>
