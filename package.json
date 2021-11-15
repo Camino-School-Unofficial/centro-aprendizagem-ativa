@@ -1,0 +1,14 @@
+{
+  "name": "Organograma",
+  "main": "organograma.js",
+  "version": "165.0.0",
+  "homepage": "",
+  "author": {
+    "name": "D3",
+    "url": ""
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}

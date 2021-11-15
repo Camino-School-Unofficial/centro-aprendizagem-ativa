@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Organograma Camino School</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="i/favicon.png" type="image/x-icon" />
+    <!-- AOS 3.0.0-beta.6 plugin CSS (Animations) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&subset=latin&display=swap"
+        rel="stylesheet" />
+    <!-- Startup CSS + Bootstrap CSS (Styles for all blocks) -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- jQuery 3.6.0 (uncomment line below if you need jQuery) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <section class="pt-10 pt-lg-20 text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-9 col-lg-7 col-xl-6 col-xxl-7">
+                    <h2 class="display-5 mb-6" data-aos="fade-down" data-aos-delay="0">
+                        Organograma Camino School
+                    </h2>
+                    <p class="mb-15 fs-2" data-aos="fade-down" data-aos-delay="150">
+                        Clique para dar zoom in e zoom out e navegar pelas áreas e atores do ecossistema Camino School
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <script type="module">
+                    import define from "./organograma.js";
+                    import { Runtime, Library, Inspector } from "./runtime.js";
+
+                    const runtime = new Runtime();
+                    const main = runtime.module(define, Inspector.into(document.body));
+
+                </script>
+            </div>
+        </div>
+    </section>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS 3.0.0-beta.6 plugin JS (Animations) -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Startup JS (Custom js for all blocks) - Remove ".min" if you want to edit a JS code -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
