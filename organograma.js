@@ -100,8 +100,8 @@ d3.scaleLinear()
     .range(["#e6e6e6", "#851f82"])
     .interpolate(d3.interpolateHcl)
 )});
-  main.variable(observer("d3")).define("d3", ["require"], function(require){return(
-require("d3@6")
-)});
+//   main.variable(observer("d3")).define("d3", ["require"], function(require){return(
+// require("d3@6")
+// )});
   return main;
 }
