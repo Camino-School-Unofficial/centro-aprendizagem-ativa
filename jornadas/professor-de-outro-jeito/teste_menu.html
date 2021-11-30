@@ -2,81 +2,68 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: "Open Sans", sans-serif;
-        }
-
-        .sidenav {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 500;
-            top: 0;
-            right: 0;
-            background-color: #e6e6e6;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
-            text-align: center;
-        }
-
-        .sidenav a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #818181;
-            display: block;
-            transition: 0.3s;
-
-        }
-
-        .sidenav a:hover {
-            color: #f1f1f1;
-        }
-
-        .sidenav .closebtn {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
-        }
-
-        @media screen and (max-height: 450px) {
-            .sidenav {
-                padding-top: 15px;
-            }
-
-            .sidenav a {
-                font-size: 18px;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 1920 1080">
+            <image width="1920" height="1080" xlink:href="i/mapa.svg">
+            </image>
+            <text x="920" y="220" text-anchor="middle" >Ampliando</text>
+            <text x="920" y="280" text-anchor="middle" class="st2 h2">horizontes</text>
+            <text x="1460" y="280" text-anchor="middle" class="st2 h2">Construindo</text>
+            <text x="1460" y="340" text-anchor="middle" class="st2 h2">ferramentas</text>
+            <a xlink:href="../../index.html#jornadas" class="st2 noStroke h4">
+                <text x="220" y="590" text-anchor="middle">Apresentação</text>
+                <text x="220" y="620" text-anchor="middle">da Jornada</text>
+            </a>
+            <a xlink:href="index.html" class="st2 noStroke h4">
+                <text x="440" y="590" text-anchor="middle">Tutorial de</text>
+                <text x="440" y="620" text-anchor="middle">navegação</text>
+            </a>
+            <a xlink:href="#" data-toggle="popover" data-bs-html="true"
+                data-bs-content="Aqui falamos um pouco do perfil da escola no séc XXI."
+                data-bs-placement="top">
+                <text x="655" y="590" text-anchor="middle" class="st2 h4">Aprendizagem</text>
+                <text x="655" y="620" text-anchor="middle" class="st2 h4">Ativa</text>
+            </a>
+            <a xlink:href="#" data-toggle="popover" data-bs-html="true"
+                data-bs-content="Aqui você entende como o cérebro aprende." data-bs-placement="bottom">
+                <text x="870" y="590" text-anchor="middle" class="st2 h4">Ciência da</text>
+                <text x="870" y="620" text-anchor="middle" class="st2 h4">Aprendizagem</text>
+            </a>
+            <a xlink:href="#" data-toggle="popover" data-bs-html="true"
+                data-bs-content="Aqui você percebe a importância das competências socioemocionais na aprendizagem e na vida."
+                data-bs-placement="top">
+                <text x="1085" y="590" text-anchor="middle" class="st2 h4">Socio</text>
+                <text x="1085" y="620" text-anchor="middle" class="st2 h4">emocionais</text>
+            </a>
+            <a xlink:href="#" data-toggle="popover" data-bs-html="true"
+                data-bs-content="Aqui você acessa e compartilha estratégias para ser usada em sala de aula."
+                data-bs-placement="bottom" class="st1 h4 noStroke">
+                <text x="1300" y="600" text-anchor="middle">Estratégias</text>
+            </a>
+            <a xlink:href="#" data-toggle="popover" data-bs-html="true"
+                data-bs-content="Aqui você faz o planejamento de uma aula completa usando de metodologia ativa."
+                data-bs-placement="top" class="st2 noStroke h4">
+                <text x="1520" y="590" text-anchor="middle">Planejamento</text>
+                <text x="1520" y="620" text-anchor="middle">Reverso</text>
+            </a>
+            <a xlink:href="#" data-toggle="popover" data-bs-html="true"
+                data-bs-content="Aqui você acessa anexos." data-bs-placement="bottom" class="st2 h4 noStroke">
+                <text x="1735" y="590" text-anchor="middle">Fim</text>
+                <text x="1735" y="620" text-anchor="middle">do trilho</text>
+            </a>
+        </svg>
     </div>
+    <span class="d-flex flex-row-reverse" style="font-size:30px;cursor:pointer;color: #e6e6e6;" onclick="openNav()">&#9776;</span>
 
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
-
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "100%";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
+    <script src="js/menu.js"></script>
 
 </body>
 

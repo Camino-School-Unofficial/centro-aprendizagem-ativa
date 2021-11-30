@@ -20260,6 +20260,18 @@ svg{
   stroke-miterlimit: 10;
 }
 
+.stWhiteFill{
+  font-family:'OpenSans';
+  fill: #ffffff;
+  stroke: none;
+  stroke-width: 8;
+  stroke-miterlimit: 10;
+}
+
+.noStroke {
+  stroke: none;
+}
+
 .st0{
   fill: none;
   stroke: #851f82;
@@ -20268,17 +20280,30 @@ svg{
 }
 
 .st1 {
-  fill: #ec6f05;
-  stroke: #ec6f05;
-  stroke-width: 1;
+  fill: none;
+  stroke: #F29200;
+  stroke-width: 4;
   stroke-miterlimit: 10;
 }
 
 .st2 {
   fill: #851F82;
-  stroke: #851F82;
-  stroke-width: 1;
   stroke-miterlimit: 10;
+}
+
+.st3 {
+  fill: #F29200;
+  stroke-miterlimit: 10;
+}
+
+.st4 {
+  stroke:#c91456;
+  stroke-miterlimit:10;
+}
+
+.st5 {
+  fill:#c91456;
+  stroke-miterlimit:10;
 }
 
 .player {
