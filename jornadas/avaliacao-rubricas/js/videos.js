@@ -1,5 +1,7 @@
 //This function creates an <iframe> (and YouTube player)
     let playerAE_01, playerAE_02, playerAE_03, playerAE_04, playerAE_bs;
+    let playerROA_01, playerROA_02, playerROA_03, playerROA_04, playerROA_bs;
+    let playerEA_01, playerEA_02, playerEA_03, playerEA_04, playerEA_bs;
     
     function onYouTubeIframeAPIReady() {
         console.log('frame ready');
@@ -114,7 +116,228 @@
           'onStateChange': onPlayerStateChange
         }
       });
-      
+
+      playerROA_01 = new YT.Player('ROA_01', {
+        height: '1080',
+        width: '1920',
+        videoId: 'Nsw1fLLERkA',
+        playerVars: {
+          'autoplay': 0,
+          'controls': 1,
+          'disablekb': 1,
+          'loop': 1,
+          'modestbranding': 1,
+          'rel': 0,
+          'autohide': 1,
+          'showinfo': 0,
+          'egm': 1,
+          'playsinline': 0,
+          'enablejsapi': 1
+        },
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+      playerROA_02 = new YT.Player('ROA_02', {
+        height: '1080',
+        width: '1920',
+        videoId: 'tZTQM5FidC4',
+        playerVars: {
+          'autoplay': 0,
+          'controls': 1,
+          'disablekb': 1,
+          'loop': 1,
+          'modestbranding': 1,
+          'rel': 0,
+          'autohide': 1,
+          'showinfo': 0,
+          'egm': 1,
+          'playsinline': 0,
+          'enablejsapi': 1
+        },
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+      playerROA_03 = new YT.Player('ROA_03', {
+        height: '1080',
+        width: '1920',
+        videoId: 'tbMZG4sidM0',
+        playerVars: {
+          'autoplay': 0,
+          'controls': 1,
+          'disablekb': 1,
+          'loop': 1,
+          'modestbranding': 1,
+          'rel': 0,
+          'autohide': 1,
+          'showinfo': 0,
+          'egm': 1,
+          'playsinline': 0,
+          'enablejsapi': 1
+        },
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+      playerROA_04 = new YT.Player('ROA_04', {
+        height: '1080',
+        width: '1920',
+        videoId: 'RpvyRR_u6zM',
+        playerVars: {
+          'autoplay': 0,
+          'controls': 1,
+          'disablekb': 1,
+          'loop': 1,
+          'modestbranding': 1,
+          'rel': 0,
+          'autohide': 1,
+          'showinfo': 0,
+          'egm': 1,
+          'playsinline': 0,
+          'enablejsapi': 1
+        },
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+      playerROA_bs = new YT.Player('ROA_bs', {
+        height: '1080',
+        width: '1920',
+        videoId: 'ksqvrhWQr3A',
+        playerVars: {
+          'autoplay': 0,
+          'controls': 1,
+          'disablekb': 1,
+          'loop': 1,
+          'modestbranding': 1,
+          'rel': 0,
+          'autohide': 1,
+          'showinfo': 0,
+          'egm': 1,
+          'playsinline': 0,
+          'enablejsapi': 1
+        },
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+
+      playerEA_01 = new YT.Player('EA_01', {
+        height: '1080',
+        width: '1920',
+        videoId: 'aKUPTuoJZX8',
+        playerVars: {
+          'autoplay': 0,
+          'controls': 1,
+          'disablekb': 1,
+          'loop': 1,
+          'modestbranding': 1,
+          'rel': 0,
+          'autohide': 1,
+          'showinfo': 0,
+          'egm': 1,
+          'playsinline': 0,
+          'enablejsapi': 1
+        },
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+      playerEA_02 = new YT.Player('EA_02', {
+        height: '1080',
+        width: '1920',
+        videoId: 'oskCVTsi8sM',
+        playerVars: {
+          'autoplay': 0,
+          'controls': 1,
+          'disablekb': 1,
+          'loop': 1,
+          'modestbranding': 1,
+          'rel': 0,
+          'autohide': 1,
+          'showinfo': 0,
+          'egm': 1,
+          'playsinline': 0,
+          'enablejsapi': 1
+        },
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+      playerEA_03 = new YT.Player('EA_03', {
+        height: '1080',
+        width: '1920',
+        videoId: '-h3E06cP8UA',
+        playerVars: {
+          'autoplay': 0,
+          'controls': 1,
+          'disablekb': 1,
+          'loop': 1,
+          'modestbranding': 1,
+          'rel': 0,
+          'autohide': 1,
+          'showinfo': 0,
+          'egm': 1,
+          'playsinline': 0,
+          'enablejsapi': 1
+        },
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+      playerEA_04 = new YT.Player('EA_04', {
+        height: '1080',
+        width: '1920',
+        videoId: 'zlCGCCr3QOM',
+        playerVars: {
+          'autoplay': 0,
+          'controls': 1,
+          'disablekb': 1,
+          'loop': 1,
+          'modestbranding': 1,
+          'rel': 0,
+          'autohide': 1,
+          'showinfo': 0,
+          'egm': 1,
+          'playsinline': 0,
+          'enablejsapi': 1
+        },
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+      playerEA_bs = new YT.Player('EA_bs', {
+        height: '1080',
+        width: '1920',
+        videoId: 'Q74pDzIuNY4',
+        playerVars: {
+          'autoplay': 0,
+          'controls': 1,
+          'disablekb': 1,
+          'loop': 1,
+          'modestbranding': 1,
+          'rel': 0,
+          'autohide': 1,
+          'showinfo': 0,
+          'egm': 1,
+          'playsinline': 0,
+          'enablejsapi': 1
+        },
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
     }
 
 
